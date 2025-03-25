@@ -11,6 +11,9 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 :root {
@@ -21,7 +24,7 @@ html, body {
 body {
   background: linear-gradient(90deg, #940a94, #491fd5, #32b7ec);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 20s ease infinite;
   transform: translate3d(0, 0, 0);
 }
 

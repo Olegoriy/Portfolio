@@ -1,0 +1,56 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    padding: 50px 5vw 20px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    &__image {
+        height: 550px;
+        border: 4px solid #FFF;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        background: #000; 
+        transition: all 0.3s ease; 
+
+        &-full {
+            padding-top: 30px;
+        }
+    }
+
+    &__image:hover {
+        transform: scale(1.02); 
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        border: 6px solid #000;
+    }
+
+    &__item {
+        &-title {
+            font-size: 130px;
+            line-height: 140%;
+        }
+
+        &-subtitle {
+            font-size: 70px;
+            line-height: 140%;
+        }
+
+        &-position {
+            font-size: 40px;
+            line-height: 120%;
+            padding-bottom: 50px;
+        }
+
+        &-scroll {
+            color: #FFF;           
+            letter-spacing: .1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}

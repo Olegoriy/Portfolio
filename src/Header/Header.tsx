@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <header className='header'>
             <img 
-                src="/logo.svg" 
+                src="/logo.png" 
                 alt="Logo" 
                 className="header__logo"
             />
