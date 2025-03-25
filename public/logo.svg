@@ -1,0 +1,11 @@
+<svg width="40" height="30" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_1_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text style="cursor: move;" transform="matrix(0.41289 0 0 0.341508 -148.375 -58.7342)" stroke="#000000" stroke-width="3" filter="url(#svg_1_blur)" font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Lora'" font-size="60" id="svg_1" y="237.77778" x="363.93726" fill="#ffffff">KO</text>
+ </g>
+</svg>
