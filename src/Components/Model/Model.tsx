@@ -22,8 +22,8 @@ export default function Model() {
   
     return (
       <div style={{ 
-        width: '350px', 
-        height: '350px',
+        width: '500px', 
+        height: '500px',
         cursor: isInteracting ? 'grabbing' : 'grab' 
       }}>
         <Canvas
@@ -43,7 +43,7 @@ export default function Model() {
           <OrbitControls
             enableZoom={true}
             autoRotate
-            autoRotateSpeed={2.5}
+            autoRotateSpeed={5.5}
             minDistance={4}  
             maxDistance={8} 
             minPolarAngle={Math.PI/6}

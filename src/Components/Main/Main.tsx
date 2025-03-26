@@ -33,7 +33,9 @@ const Main: React.FC = () => {
                 </li>
             </ul>
         
-            <Model />
+            <div className="model-wrapper">
+                <Model />
+            </div>
 
         </div>
     );
