@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-family: "Bytesized", sans-serif;
+    font-style: normal;
+    
+
+    &__logo {
+        width: 150px;
+        height: 120px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-6px);
+        }
+
+        &:active {
+            transform: scale(0.95) translateY(2px);
+            transition-duration: 0.1s;
+        }
+    }
+      
+    &__btn-mail {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        height: 60px;
+        width: 230px;
+        text-align: center;
+        border-radius: 5px 5px 25px 5px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        background: #000;
+        color: #FFF;
+        border: 2px solid transparent;
+        border-color: #FFF;
+        font-size: 26px;
+    }
+    
+    &__btn-mail:hover {
+        background: #FFF;
+        color: #000;
+        border-color: #000;
+        transform: translateY(-6px);
+    }
+}
