@@ -1,4 +1,4 @@
-// import Model from '../Model/Model';
+import Model from '../Model/Model';
 
 import './Main.scss';
 
@@ -33,9 +33,9 @@ const Main: React.FC = () => {
                 </li>
             </ul>
         
-            {/* <div className="model-wrapper">
+            <div className="model-wrapper">
                 <Model />
-            </div> */}
+            </div>
 
         </div>
     );
