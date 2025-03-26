@@ -25,7 +25,6 @@ body {
   background: linear-gradient(90deg, #940a94, #491fd5, #32b7ec);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
-  transform: translate3d(0, 0, 0);
 }
 
 @keyframes gradient {
