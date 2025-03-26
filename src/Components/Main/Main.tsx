@@ -15,7 +15,7 @@ const Main: React.FC = () => {
                 </li>
 
                 <li className="main__list-item">
-                    <h3 className="main__item-position">Frontend Developer</h3>
+                    <p className="main__item-position">Frontend Developer</p>
                 </li>
 
                 <li className="main__list-item">

@@ -22,8 +22,8 @@ export default function Model() {
   
     return (
       <div style={{ 
-        width: '500px', 
-        height: '500px',
+        width: '600px', 
+        height: '600px',
         cursor: isInteracting ? 'grabbing' : 'grab' 
       }}>
         <Canvas
