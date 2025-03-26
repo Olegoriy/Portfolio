@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Center } from '@react-three/drei'
 
 function Scene() {
-  const { scene } = useGLTF('/mac.glb')
+  const { scene } = useGLTF('./models/mac.glb')
   
   return (
     <Center>

@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import './About.scss';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+// import author from '/images/author_img.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,12 +42,12 @@ const About: React.FC = () => {
 
     return (
         <div className='about' id='about'>
-            <img 
+            {/* <img 
+                src={author}
                 ref={imageRef}
-                src='/author_img.jpg' 
                 className='about__image' 
                 alt="Author" 
-            />
+            /> */}
             <div className="about__description" ref={textRef}>
                 <h2 className="about__description-position">
                     Frontend Developer
