@@ -1,47 +1,49 @@
 .main {
     display: flex;
+    align-items: center;
+    min-height: 100vh;
     justify-content: space-between;
     color: #FFF;
-    padding: 150px 10vw 20px;
+    padding: clamp(100px, 8vh, 150px) clamp(20px, 5vw, 100px) 20px;
 
     &__list {
         display: flex;
         flex-direction: column;
         list-style: none;
-        width: 30%;
+        width: 40%; 
+        max-width: 600px;
     }
 
     &__image-full {
         padding-top: 30px;
     }
-    
 
     &__item {
         &-title {
-            font-size: 130px;
-            line-height: 100%;
+            font-size: clamp(4rem, 10vw, 130px);
+            line-height: 1;
         }
 
         &-subtitle {
-            font-size: 70px;
-            line-height: 120%;
+            font-size: clamp(2rem, 6vw, 70px); 
+            line-height: 1.2;
         }
 
         &-position {
-            font-size: 40px;
-            line-height: 100%;
-            padding-bottom: 50px;
+            font-size: clamp(1.5rem, 3vw, 40px);
+            line-height: 1;
+            padding-bottom: clamp(20px, 5vh, 50px);
         }
 
         &-scroll {
             color: #FFF;           
             letter-spacing: .1rem;
-            font-size: 1rem;
             font-weight: 700;
             text-decoration: none;
             transition: all 0.3s ease;
             display: inline-block;
             cursor: pointer;
+            font-size: clamp(0.8rem, 1.5vw, 1rem);
 
             &:hover {
                 transform: translateY(-2px);
@@ -51,6 +53,40 @@
             &:active {
                 transform: scale(0.95) translateY(1px);
                 transition-duration: 0.2s;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 100px;
+
+        &__image-full {
+            display: none;
+        }
+
+        &__list {
+            width: 100%;
+            max-width: none;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__item {
+            &-title {
+                font-size: clamp(3rem, 12vw, 4rem);
+            }
+
+            &-subtitle {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+            }
+
+            &-position {
+                font-size: clamp(1rem, 4vw, 1.5rem);
             }
         }
     }

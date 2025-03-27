@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Center } from '@react-three/drei'
 
 function Scene() {
-  const { scene } = useGLTF('./models/mac.glb')
+  const { scene } = useGLTF('/Portfolio/models/mac.glb')
   
   return (
     <Center>
@@ -22,8 +22,8 @@ export default function Model() {
   
     return (
       <div style={{ 
-        width: '600px', 
-        height: '600px',
+        width: '45vw', 
+        height: '45vw',
         cursor: isInteracting ? 'grabbing' : 'grab' 
       }}>
         <Canvas
@@ -41,11 +41,10 @@ export default function Model() {
           <Scene />
   
           <OrbitControls
-            enableZoom={true}
+            enableZoom={false}
+            enablePan={false}
             autoRotate
             autoRotateSpeed={5.5}
-            minDistance={4}  
-            maxDistance={8} 
             minPolarAngle={Math.PI/6}
             maxPolarAngle={Math.PI/2.5}
             onStart={() => setIsInteracting(true)}  

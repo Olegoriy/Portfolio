@@ -16,7 +16,7 @@ const About: React.FC = () => {
             { 
                 x: 0, 
                 opacity: 1, 
-                duration: 1,
+                duration: 0.5,
                 scrollTrigger: {
                     trigger: '#about',
                     start: 'top 80%',
@@ -30,7 +30,7 @@ const About: React.FC = () => {
             { 
                 x: 0, 
                 opacity: 1, 
-                duration: 1,
+                duration: 0.4,
                 scrollTrigger: {
                     trigger: '#about',
                     start: 'top 80%',
