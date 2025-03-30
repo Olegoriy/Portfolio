@@ -21,9 +21,9 @@ export default function Model() {
     const [isInteracting, setIsInteracting] = useState(false)
   
     return (
-      <div style={{ 
-        width: '45vw', 
-        height: '45vw',
+      <div className='canvas__container' style={{ 
+        width: '60vw', 
+        height: '60vw',
         cursor: isInteracting ? 'grabbing' : 'grab' 
       }}>
         <Canvas
