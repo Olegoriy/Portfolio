@@ -56,6 +56,9 @@ const About: React.FC = () => {
                     Oleg is a frontend developer with a razor-sharp focus on crafting robust, user-centric web applications. He transforms complex requirements into clean, scalable code. His meticulous approach to architecture and performance optimization has positioned him as a trusted partner for startups and tech teams tackling ambitious projects.
                     Beyond pixels, he thrives on solving technical puzzles—streamlining workflows, integrating APIs, and pushing the limits of modern browser capabilities.
                 </p>
+                <p className="about__description-text">
+                    * Based in Saint-Petersburg, Russia
+                </p>
             </div>
         </div>
     )
