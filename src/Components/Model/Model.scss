@@ -1,9 +1,16 @@
-// .canvas__container { 
-//     width: '95vw';
-//     // height: '20vh';
-// }
-
-
-.canvas {
-    width: 95vw;
+.canvas__container {
+    width: 75vw;
+    height: 65vh; 
+  
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+  }
+@media (max-width: 768px) {
+    .canvas__container {
+        width: 80vw;
+        height: 40vh;
+    }
 }
