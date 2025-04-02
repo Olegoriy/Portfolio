@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Center } from '@react-three/drei'
 
+import './Model.scss';
+
 function Scene() {
   const { scene } = useGLTF('/Portfolio/models/mac.glb')
   
@@ -22,18 +24,15 @@ export default function Model() {
   
     return (
       <div className='canvas__container' style={{ 
-        width: '60vw', 
-        height: '60vw',
         cursor: isInteracting ? 'grabbing' : 'grab' 
       }}>
-        <Canvas
+        <Canvas className='canvas'
           camera={{
             position: [0, 0.5, 5],
             fov: 50,
             near: 0.1,
             far: 1000
           }}
-          style={{ width: '100%', height: '100%' }}
         >
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={2} castShadow />
